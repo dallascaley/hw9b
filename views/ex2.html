@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dallas' Example 2</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <h1><a href="/">Link to Start Page</a></h1>
+    <h2>Dallas' Countries API Call</h2>
+
+    <div id="content">
+        <label>Enter your name: </label><input type="text" id="username"/><br/>
+        <label>And a list of countries you have visited:</label><br/>
+        <div class="countryInput">
+            <label>#1: </label>
+            <input type="text" id="country1"/> 
+            Year Visited: <input type="number" min="1900" max="2099" id="year1" />
+            <button id="add1">+</button>
+        </div>
+    </div>
+    <br/><button id="submit">Submit</button>
+    <div id="results"></div>
+
+    <script src="public/ex2.js"></script>
+</body>
+</html>

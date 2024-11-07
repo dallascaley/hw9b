@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dallas' Example 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1><a href="/">Link to Start Page</a></h1>
+    <h2>Dallas' Sample Form</h2>
+    
+    <form id="myForm">
+        <div>
+            <label>Name:</label>
+            <input name="name"/>
+        </div>
+        <div>
+            <lable>Email:</lable>
+            <input name="email"/>
+        </div>
+        <div>
+            <label>Payment Type:</label><br/>
+            <input type="radio" name="payment" value="cs"/><span>Cash</span><br/>
+            <input type="radio" name="payment" value="cc"/><span>Credit Card</span><br/>
+            <input type="radio" name="payment" value="gpay"/><span>Google Pay</span><br/>
+            <input type="radio" name="payment" value="apay"/><span>Apple Pay</span><br/>
+        </div>
+        <div>
+            <input type="checkbox" name="promo"/><label>Sign me up for special promotions</label>
+        </div>
+        <div>
+            <label>Preferrred Location</label>
+            <select name="location">
+                <option value="la">Los Angeles</option>
+                <option value="oc">Orange County</option>
+                <option value="rs">Riverside</option>
+                <option value="sd">San Diego</option>
+            </select>
+        </div>
+        <input type="submit" value="Submit" id="submit">
+        <button>Cancel</button>
+    </form>
+
+    <div id="results"></div>
+    <script src="public/ex1.js"></script>
+</body>
+</html>
